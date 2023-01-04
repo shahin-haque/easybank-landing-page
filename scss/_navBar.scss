@@ -1,8 +1,8 @@
 .nav-header {
-  padding: 1rem;
   max-width: 1200px;
   margin: auto;
   position: relative;
+  padding: 1rem;
   @include flex-c-jcsb;
 
   .menuIcon {
@@ -45,8 +45,8 @@
     .links-wrapper {
       @include flex-c;
       gap: 1rem;
-      padding: 20px;
       @include mq-mobile-only {
+        padding: 20px;
         display: block;
         position: absolute;
         top: 1rem;
@@ -87,7 +87,7 @@
       rgba(255, 255, 255, 0.409)
     );
     position: absolute;
-    top: 3.125rem;
+    top: 3.6rem;
     left: 0;
     bottom: 0;
     right: 0;

@@ -1,6 +1,5 @@
 .nav-header {
   padding: 1rem;
-
   max-width: 1200px;
   margin: auto;
   position: relative;
@@ -46,7 +45,7 @@
     .links-wrapper {
       @include flex-c;
       gap: 1rem;
-
+      padding: 20px;
       @include mq-mobile-only {
         display: block;
         position: absolute;
@@ -62,8 +61,8 @@
           &:hover,
           &:focus {
             opacity: 0.9;
-            background-color: beige;
-            transform: scale(1.01);
+
+            transform: scale(1.1);
           }
         }
       }
@@ -84,7 +83,7 @@
     transition: $transition-main;
     background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.412),
+      rgba(0, 0, 0, 0.494),
       rgba(255, 255, 255, 0.409)
     );
     position: absolute;
@@ -96,6 +95,7 @@
     height: 100vh;
     max-height: 0;
     overflow: hidden;
+    z-index: 100;
   }
 }
 .menuIcon[aria-expanded='true'] + .main-nav .links-container {

@@ -11,6 +11,11 @@ $desktop: 89rem;
 $transition-main: all 300ms ease-in-out;
 
 //
+p {
+  color: $Grayish-Blue;
+  font-size: 16px;
+}
+//
 .btn {
   background: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
   color: $White;

@@ -179,6 +179,7 @@ h4 {
 .hero .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding-inline: 0;
 }
 @media screen and (min-width: 47rem) {
   .hero .container {
@@ -331,6 +332,7 @@ h4 {
 @media screen and (min-width: 47rem) {
   .latest-article .articles p:last-of-type {
     font-size: 15px;
+    margin-bottom: 0px;
   }
 }
 .latest-article .articles .bold-text {
@@ -349,4 +351,64 @@ h4 {
 }
 .latest-article .articles .bold-text:hover {
   color: hsl(136deg, 65%, 51%);
+}
+
+footer {
+  background-color: hsl(233deg, 26%, 24%);
+  color: hsl(0deg, 0%, 98%);
+  text-align: center;
+}
+@media screen and (min-width: 47rem) {
+  footer {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 47rem) {
+  footer .footer-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+  }
+}
+footer .footer-info > * {
+  padding-block: 10px;
+}
+footer .footer-info .logo-footer {
+  filter: brightness(0.1) invert(1);
+}
+footer .footer-info .social-icon {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding-top: 20px;
+  cursor: pointer;
+}
+footer .footer-info .footer-links {
+  opacity: 0.7;
+}
+footer .footer-info .footer-links a:hover {
+  transition: color 300ms ease;
+  color: hsl(136deg, 65%, 51%);
+}
+@media screen and (min-width: 47rem) {
+  footer .footer-info .footer-links {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+  }
+}
+footer .footer-info .footer-links .even {
+  display: grid;
+  gap: 10px;
+}
+footer .footer-info .footer-btn {
+  margin-left: auto;
+}
+@media screen and (min-width: 47rem) {
+  footer .footer-info .footer-btn {
+    text-align: right;
+  }
+}
+footer .footer-info .footer-btn p {
+  padding-block: 20px;
 }/*# sourceMappingURL=globals.css.map */

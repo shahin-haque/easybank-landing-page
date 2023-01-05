@@ -1,0 +1,31 @@
+.service {
+  background-color: $Light-Grayish-Blue;
+  text-align: center;
+
+  @include mq-tablet {
+    margin-top: -135px;
+    text-align: left;
+  }
+  header {
+    max-width: 550px;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  p {
+    padding-block: 20px;
+  }
+  .service-info {
+    padding-top: 20px;
+
+    & img {
+      padding-block: 20px;
+    }
+
+    @include mq-tablet {
+      display: flex;
+      gap: 24px;
+    }
+  }
+}

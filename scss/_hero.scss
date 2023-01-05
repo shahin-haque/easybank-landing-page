@@ -1,45 +1,47 @@
 .hero {
   background-color: $Very-Light-Gray;
   overflow: hidden;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  @include mq-tablet {
-    display: flex;
-    align-items: center;
-  }
 
-  .illustration-mockups {
-    position: relative;
-    max-height: 955px;
-    margin-top: -50px;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
     @include mq-tablet {
-      order: 2;
-      flex: 4;
-      margin-right: -300px;
-      margin-top: -190px;
-      height: 985px;
+      display: flex;
+      align-items: center;
+    }
+
+    .illustration-mockups {
+      overflow: hidden;
+
+      position: relative;
+      max-height: 955px;
+      margin-top: -50px;
+      @include mq-tablet {
+        order: 2;
+        flex: 4;
+        margin-right: -300px;
+        margin-top: -250px;
+        height: 985px;
+      }
+    }
+
+    .mockups {
+      position: absolute;
+      top: -50px;
+      width: 90%;
+      bottom: 0;
+      right: 20px;
+      @include mq-tablet {
+        width: 80%;
+
+        right: 50px;
+        top: 50px;
+      }
     }
   }
-
-  .mockups {
-    position: absolute;
-    top: -50px;
-    width: 90%;
-    bottom: 0;
-    right: 20px;
-    @include mq-tablet {
-      width: 80%;
-
-      right: 50px;
-      top: 50px;
-    }
-  }
 }
-
 .hero-info {
-  margin-top: -30px;
+  margin-top: -80px;
   text-align: center;
   padding: 20px;
   @include mq-tablet {

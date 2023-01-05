@@ -6,7 +6,7 @@ const NavLinks = () => {
     <div className="links-container">
       <ul className="links-wrapper">
         <li className="link">
-          <Link href="/home">Home</Link>
+          <Link href="/">Home</Link>
         </li>
         <li className="link">
           <Link href="/about">About</Link>

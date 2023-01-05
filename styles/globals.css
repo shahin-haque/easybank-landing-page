@@ -52,6 +52,13 @@ h4 {
   font-weight: 300;
 }
 
+.About,
+.Contact,
+.Blog,
+.Careers {
+  min-height: 65vh;
+}
+
 .btn {
   background: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
   color: hsl(0deg, 0%, 100%);
